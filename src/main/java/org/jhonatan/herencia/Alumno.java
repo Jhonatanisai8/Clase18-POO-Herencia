@@ -11,6 +11,10 @@ public class Alumno extends Persona {//clase hija de la clase persona
     private double notaCastellano;
     private double notaHistoria;
 
+    public String getNombre() {
+        return nombre;
+    }
+
     public String getInstitucion() {
         return institucion;
     }

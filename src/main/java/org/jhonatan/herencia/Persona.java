@@ -6,7 +6,7 @@ package org.jhonatan.herencia;
  */
 public class Persona {
 
-    private String nombre;
+    protected String nombre;
     private String apellido;
     private int edad;
     private String email;
