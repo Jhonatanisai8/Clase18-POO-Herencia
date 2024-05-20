@@ -6,4 +6,5 @@ package org.jhonatan.herencia;
  */
 public class Profesor extends Persona {
 
+    private String asignatura;
 }
