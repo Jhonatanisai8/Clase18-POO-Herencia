@@ -1,6 +1,7 @@
 package org.jhonatan.Ejemplo;
 
 import org.jhonatan.herencia.Alumno;
+import org.jhonatan.herencia.AlumnoInternacional;
 import org.jhonatan.herencia.Persona;
 import org.jhonatan.herencia.Profesor;
 
@@ -43,6 +44,18 @@ public class main {
         alumnoDani.setNotaHistoria(11.2);
         alumnoDani.setNotaMatematicas(9.4);
 
+        //creacion de un objeto de la clase alumno internacional
+        AlumnoInternacional alumnoJose = new AlumnoInternacional();
+        alumnoJose.setNombre("Jose Manuel");
+        alumnoJose.setApellido("Cordova Garcia");
+        alumnoJose.setPais("Ecuador");
+        alumnoJose.setEdad(15);
+        alumnoJose.setInstitucion("Univerdad del Ecuador UUDD");
+        alumnoJose.setNotaIdiamas(14.4);
+        alumnoJose.setNotaCastellano(15.6);
+        alumnoJose.setNotaHistoria(11.4);
+        alumnoJose.setNotaMatematicas(16.7);
+
         System.out.println("Alumno: " + alumno.getNombre() + " " + alumno.getApellido()
                 + "\nInstitucion: " + ((Alumno) alumno).getInstitucion());
 
@@ -63,6 +76,28 @@ public class main {
                 + "\nNota Castellano: " + alumnoDani.getNotaCastellano()
                 + "\nNota historia: " + alumnoDani.getNotaHistoria()
                 + "\nNota Matematicas: " + alumnoDani.getNombre());
+
+        System.out.println("");
+        System.out.println("Alumno Internacional"
+                + "\nNombre: " + alumnoJose.getNombre()
+                + "\nApellido: " + alumnoJose.getApellido()
+                + "\nEdad: " + alumnoJose.getEdad()
+                + "\nEmail: " + alumnoJose.getEmail()
+                + "\nPais: " + alumnoJose.getPais()
+                + "\nInstitucion: " + alumnoJose.getInstitucion()
+                + "\nNota Castellano: " + alumnoJose.getNotaCastellano()
+                + "\nNota historia: " + alumnoJose.getNotaHistoria()
+                + "\nNota Matematicas: " + alumnoJose.getNombre());
+
+        System.out.println("\nMostrando Jerarquia de Clases");
+        //mostramos la jerarquia de las clases
+        Class clase = alumnoJose.getClass();
+        while (clase.getSuperclass() != null) {
+            String hija = clase.getName();
+            String padre = clase.getSuperclass().getName();
+            System.out.println(hija + " es una clase hija de la clase " + padre);
+            clase = clase.getSuperclass();
+        }
 
     }
 }
