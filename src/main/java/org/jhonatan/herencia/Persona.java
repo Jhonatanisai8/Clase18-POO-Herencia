@@ -6,10 +6,10 @@ package org.jhonatan.herencia;
  */
 public class Persona {
 
-    private String nombre;
-    private String apellido;
-    private int edad;
-    private String email;
+    protected String nombre;
+    protected String apellido;
+    protected int edad;
+    protected String email;
 
     public String getNombre() {
         return nombre;
