@@ -9,8 +9,12 @@ public class Profesor extends Persona {//clase hija de persona
     private String asignatura;
 
     //constructor
+    
     public Profesor() {
-        System.out.println("Inicializando constructor");
+    }
+
+    public Profesor(String nombre) {
+        super(nombre);
     }
 
     public String getAsignatura() {

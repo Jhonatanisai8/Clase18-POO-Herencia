@@ -13,7 +13,10 @@ public class Persona {
 
     //constructor
     public Persona() {
-        System.out.println("Inicializando constructor ");
+    }
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getNombre() {

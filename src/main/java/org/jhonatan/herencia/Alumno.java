@@ -12,8 +12,12 @@ public class Alumno extends Persona {//clase hija de la clase persona
     private double notaHistoria;
 
     //constructor
+
     public Alumno() {
-        System.out.println("Inicializando constructor");
+    }
+
+    public Alumno(String nombre) {
+        super(nombre);
     }
 
     public String getInstitucion() {
