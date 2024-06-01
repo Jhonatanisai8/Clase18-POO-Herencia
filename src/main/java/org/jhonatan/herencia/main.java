@@ -9,7 +9,9 @@ public class main {
     public static void main(String[] args) {
         System.out.println("HERENCIA EN POO");
         Alumno alumno = new Alumno();
-        alumno.setNombre("Jhonatan Isai");
+        
+        //se puede acceder directamente al atributo
+        alumno.nombre = ("Jhonatan Isai");
         alumno.setApellido("Ojeda Sanchez");
 
         Profesor profesor = new Profesor();
