@@ -12,11 +12,14 @@ public class main {
 
     public static void main(String[] args) {
         System.out.println("HERENCIA EN POO");
-        Alumno alumno = new Alumno();
+        Persona alumno = new Alumno();
 
         //marca error por que las clases estan en otra clase
         alumno.setNombre("Jhonatan Isai");
         alumno.setApellido("Ojeda Sanchez");
+
+        //casteando el objeto de tipo persona
+        ((Alumno) alumno).setInstitucion("Instituto Nacional");
 
         Profesor profesor = new Profesor();
         profesor.setNombre("Leandro Madrid");
@@ -29,7 +32,8 @@ public class main {
         persona.setEdad(12);
         persona.setEmail("pedroluis@gmail.com");
 
-        System.out.println("Alumno: " + alumno.getNombre() + " " + alumno.getApellido());
+        System.out.println("Alumno: " + alumno.getNombre() + " " + alumno.getApellido()
+                + "\nInstitucion: " + ((Alumno) alumno).getInstitucion());
 
         System.out.println("Profesor " + profesor.getAsignatura() + " :"
                 + profesor.getNombre() + " " + profesor.getApellido());
