@@ -1,4 +1,8 @@
-package org.jhonatan.herencia;
+package org.jhonatan.Ejemplo;
+
+import org.jhonatan.herencia.Alumno;
+import org.jhonatan.herencia.Persona;
+import org.jhonatan.herencia.Profesor;
 
 /**
  *
@@ -9,9 +13,9 @@ public class main {
     public static void main(String[] args) {
         System.out.println("HERENCIA EN POO");
         Alumno alumno = new Alumno();
-        
-        //se puede acceder directamente al atributo
-        alumno.nombre = ("Jhonatan Isai");
+
+        //marca error por que las clases estan en otra clase
+        alumno.setNombre("Jhonatan Isai");
         alumno.setApellido("Ojeda Sanchez");
 
         Profesor profesor = new Profesor();
