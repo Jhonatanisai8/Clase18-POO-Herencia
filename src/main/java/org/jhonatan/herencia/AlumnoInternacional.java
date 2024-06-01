@@ -9,6 +9,10 @@ public class AlumnoInternacional extends Alumno {//hereda de alumno
     private String pais;
     private double notaIdiamas;
 
+    public AlumnoInternacional() {
+        System.out.println("Inicializando constructor");
+    }
+
     public String getPais() {
         return pais;
     }

@@ -8,6 +8,11 @@ public class Profesor extends Persona {//clase hija de persona
 
     private String asignatura;
 
+    //constructor
+    public Profesor() {
+        System.out.println("Inicializando constructor");
+    }
+
     public String getAsignatura() {
         return asignatura;
     }
