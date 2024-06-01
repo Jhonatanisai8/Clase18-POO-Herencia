@@ -62,8 +62,9 @@ public class main {
                 + "\nEmail: " + persona.getEmail());
 
         System.out.println("======================");
-        System.out.println("Alumno"
-                + "\nNombre: " + alumnoDani.getNombre()
+        System.out.println("""
+                           Alumno
+                           Nombre: """ + alumnoDani.getNombre()
                 + "\nApellido: " + alumnoDani.getApellido()
                 + "\nEdad: " + alumnoDani.getEdad()
                 + "\nEmail: " + alumnoDani.getEmail()
@@ -73,8 +74,9 @@ public class main {
                 + "\nNota Matematicas: " + alumnoDani.getNombre());
 
         System.out.println("======================");
-        System.out.println("Alumno Internacional"
-                + "\nNombre: " + alumnoJose.getNombre()
+        System.out.println("""
+                           Alumno Internacional
+                           Nombre: """ + alumnoJose.getNombre()
                 + "\nApellido: " + alumnoJose.getApellido()
                 + "\nEdad: " + alumnoJose.getEdad()
                 + "\nEmail: " + alumnoJose.getEmail()
