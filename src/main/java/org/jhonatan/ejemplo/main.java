@@ -32,6 +32,17 @@ public class main {
         persona.setEdad(12);
         persona.setEmail("pedroluis@gmail.com");
 
+        //objeto de la clase alumno
+        Alumno alumnoDani = new Alumno();
+        alumnoDani.setNombre("Daniel Eli");
+        alumnoDani.setApellido("Ojeda Sanchez");
+        alumnoDani.setEdad(12);
+        alumnoDani.setEmail("daniel@gmail.com");
+        alumnoDani.setInstitucion("Jesus de Nazaret 15434");
+        alumnoDani.setNotaCastellano(12.3);
+        alumnoDani.setNotaHistoria(11.2);
+        alumnoDani.setNotaMatematicas(9.4);
+
         System.out.println("Alumno: " + alumno.getNombre() + " " + alumno.getApellido()
                 + "\nInstitucion: " + ((Alumno) alumno).getInstitucion());
 
@@ -41,6 +52,17 @@ public class main {
         System.out.println("Persona: " + persona.getNombre() + " " + persona.getApellido()
                 + "\nEdad: " + persona.getEdad()
                 + "\nEmail: " + persona.getEmail());
+
+        System.out.println("");
+        System.out.println("Alumno"
+                + "\nNombre: " + alumnoDani.getNombre()
+                + "\nApellido: " + alumnoDani.getApellido()
+                + "\nEdad: " + alumnoDani.getEdad()
+                + "\nEmail: " + alumnoDani.getEmail()
+                + "\nInstitucion: " + alumnoDani.getInstitucion()
+                + "\nNota Castellano: " + alumnoDani.getNotaCastellano()
+                + "\nNota historia: " + alumnoDani.getNotaHistoria()
+                + "\nNota Matematicas: " + alumnoDani.getNombre());
 
     }
 }
