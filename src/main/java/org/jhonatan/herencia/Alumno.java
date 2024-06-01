@@ -12,12 +12,30 @@ public class Alumno extends Persona {//clase hija de la clase persona
     private double notaHistoria;
 
     //constructor
-
     public Alumno() {
+
     }
 
-    public Alumno(String nombre) {
-        super(nombre);
+    public Alumno(String nombre, String apellido) {
+        super(nombre, apellido);//constructor del padre
+    }
+
+    public Alumno(String nombre, String apellido, int edad) {
+        super(nombre, apellido, edad);
+    }
+
+    public Alumno(String nombre, String apellido, int edad, String institucion) {
+        super(nombre, apellido, edad);
+        this.institucion = institucion;
+    }
+
+    public Alumno(String nombre, String apellido, int edad,
+            String institucion, double notaMate,
+            double notaCastellano, double notaHistoria) {
+        this(nombre, apellido, edad, institucion);
+        this.notaMatematicas = notaMate;
+        this.notaCastellano = notaCastellano;
+        this.notaHistoria = notaHistoria;
     }
 
     public String getInstitucion() {
