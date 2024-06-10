@@ -23,10 +23,14 @@ public class MainConConstructores {
         alumnoFrank.setNotaCastellano(15.6);
         alumnoFrank.setNotaHistoria(11.4);
         alumnoFrank.setNotaMatematicas(16.7);
+        alumnoFrank.setEmail("frankarmando@gmail.com");
+
+
         Alumno alumnoArmando = new Alumno("Armando Walter", "Ojeda Juarez", 24);
         alumnoArmando.setNotaCastellano(11.6);
         alumnoArmando.setNotaHistoria(17.4);
         alumnoArmando.setNotaMatematicas(13.7);
+        alumnoArmando.setEmail("armandowalter@gmail.com");
 
         Alumno alumnoWalter = new Alumno("Walter Elias", "Florez Castillo", 23, "IE. Jesus de Nazaret");
         Alumno alumnoFlorentino = new Alumno("Florentino Juan", "Perez Juarez", 26, "IE. Jorgue Chavez", 12.4, 11.2,
@@ -40,6 +44,9 @@ public class MainConConstructores {
         pedro.setPais("Bolivia");
         AlumnoInternacional alberto = new AlumnoInternacional("Alberto Samir", "Garcia Lopez", "Ecuador");
 
+        imprimir(alumnoFrank);
+        imprimir(pedro);
+        imprimir(profesorSamir);
     }
 
     public static void imprimir(Persona persona) {
@@ -56,14 +63,18 @@ public class MainConConstructores {
             System.out.println("Nota Historia: " + ((Alumno) persona).getNotaHistoria());
             System.out.println("Nota Castellano: " + ((Alumno) persona).getNotaCastellano());
 
-            System.out.println("=IMPRIMIENDO DATOS DE TIPO ALUMNO INTERNACIONAL=");
             if (persona instanceof AlumnoInternacional) {
-
+                System.out.println("=IMPRIMIENDO DATOS DE TIPO ALUMNO INTERNACIONAL=");
                 // lo casteamos a tipo AlumnoInternacional
                 System.out.println("Nota idiomas: " + ((AlumnoInternacional) persona).getNotaIdiamas());
                 System.out.println("Pais: " + ((AlumnoInternacional) persona).getPais());
 
             }
+        }
+
+        if (persona instanceof Profesor) {
+            System.out.println("=IMPRIMIENDO DATOS DE PROFESOR=");
+            System.out.println(" Asiganatura: " + ((Profesor) persona).getAsignatura());
         }
     }
 }
