@@ -12,7 +12,7 @@ import org.jhonatan.herencia.Profesor;
 public class main {
 
     public static void main(String[] args) {
-                
+        ejemplo01Instancias();
     }
 
     public static void ejemplo01Instancias() {
