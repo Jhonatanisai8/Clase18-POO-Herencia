@@ -1,4 +1,4 @@
-package org.jhonatan.Ejemplo;
+package org.jhonatan.ejemplo;
 
 import org.jhonatan.herencia.Alumno;
 import org.jhonatan.herencia.AlumnoInternacional;
