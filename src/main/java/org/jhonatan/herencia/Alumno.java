@@ -21,7 +21,7 @@ public class Alumno extends Persona {//clase hija de la clase persona
     }
 
     public Alumno(String nombre, String apellido, int edad) {
-        super(nombre, apellido, edad);
+        super(nombre, apellido, edad);//constructor del padre
     }
 
     public Alumno(String nombre, String apellido, int edad, String institucion) {
