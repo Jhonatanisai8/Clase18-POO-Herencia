@@ -12,6 +12,10 @@ import org.jhonatan.herencia.Profesor;
 public class main {
 
     public static void main(String[] args) {
+                
+    }
+
+    public static void ejemplo01Instancias() {
         System.out.println("HERENCIA EN POO");
         System.out.println("=======Instancia de Alumno=======");
 
@@ -28,7 +32,7 @@ public class main {
         persona.setEmail("pedroluis@gmail.com");
 
         System.out.println("=======Instancia de Alumno=======");
-        //objeto de la clase alumno
+        // objeto de la clase alumno
         Alumno alumnoDani = new Alumno();
         alumnoDani.setNombre("Daniel Eli");
         alumnoDani.setApellido("Ojeda Sanchez");
@@ -40,7 +44,7 @@ public class main {
         alumnoDani.setNotaMatematicas(9.4);
         System.out.println("=======Instancia de Alumno Internacional=======");
 
-        //creacion de un objeto de la clase alumno internacional
+        // creacion de un objeto de la clase alumno internacional
         AlumnoInternacional alumnoJose = new AlumnoInternacional();
         alumnoJose.setNombre("Jose Manuel");
         alumnoJose.setApellido("Cordova Garcia");
@@ -63,8 +67,8 @@ public class main {
 
         System.out.println("======================");
         System.out.println("""
-                           Alumno
-                           Nombre: """ + alumnoDani.getNombre()
+                Alumno
+                Nombre: """ + alumnoDani.getNombre()
                 + "\nApellido: " + alumnoDani.getApellido()
                 + "\nEdad: " + alumnoDani.getEdad()
                 + "\nEmail: " + alumnoDani.getEmail()
@@ -75,8 +79,8 @@ public class main {
 
         System.out.println("======================");
         System.out.println("""
-                           Alumno Internacional
-                           Nombre: """ + alumnoJose.getNombre()
+                Alumno Internacional
+                Nombre: """ + alumnoJose.getNombre()
                 + "\nApellido: " + alumnoJose.getApellido()
                 + "\nEdad: " + alumnoJose.getEdad()
                 + "\nEmail: " + alumnoJose.getEmail()
@@ -88,7 +92,7 @@ public class main {
 
         System.out.println("======================");
         System.out.println("\nMostrando Jerarquia de Clases");
-        //mostramos la jerarquia de las clases
+        // mostramos la jerarquia de las clases
         Class clase = alumnoJose.getClass();
         while (clase.getSuperclass() != null) {
             String hija = clase.getName();
@@ -96,17 +100,16 @@ public class main {
             System.out.println(hija + " es una clase hija de la clase " + padre);
             clase = clase.getSuperclass();
         }
-
     }
 
     public static void creacionObjetoQuenoEssuClase() {
         Persona alumno = new Alumno();
 
-        //marca error por que las clases estan en otra clase
+        // marca error por que las clases estan en otra clase
         alumno.setNombre("Jhonatan Isai");
         alumno.setApellido("Ojeda Sanchez");
 
-        //casteando el objeto de tipo persona
+        // casteando el objeto de tipo persona
         ((Alumno) alumno).setInstitucion("Instituto Nacional");
 
         System.out.println("Alumno: " + alumno.getNombre() + " " + alumno.getApellido()
