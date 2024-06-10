@@ -42,4 +42,28 @@ public class MainConConstructores {
 
     }
 
+    public static void imprimir(Persona persona) {
+        System.out.println("=IMPRIMIENDO DATOS EN COMÚN DE PERSONA=");
+        System.out.println("Nombre: " + persona.getNombre()
+                + "\nApellido: " + persona.getApellido()
+                + "\nEdad: " + persona.getEdad()
+                + "\nEmail: " + persona.getEmail());
+        if (persona instanceof Alumno) {
+            System.out.println("=IMPRIMIENDO LOS DATOS DEL TIPO ALUMNO=");
+            // lo casteamos al objeto de tipo alumno
+            System.out.println("Institución: " + ((Alumno) persona).getInstitucion());
+            System.out.println("Nota matemàticas: " + ((Alumno) persona).getNotaMatematicas());
+            System.out.println("Nota Historia: " + ((Alumno) persona).getNotaHistoria());
+            System.out.println("Nota Castellano: " + ((Alumno) persona).getNotaCastellano());
+
+            System.out.println("=IMPRIMIENDO DATOS DE TIPO ALUMNO INTERNACIONAL=");
+            if (persona instanceof AlumnoInternacional) {
+
+                // lo casteamos a tipo AlumnoInternacional
+                System.out.println("Nota idiomas: " + ((AlumnoInternacional) persona).getNotaIdiamas());
+                System.out.println("Pais: " + ((AlumnoInternacional) persona).getPais());
+
+            }
+        }
+    }
 }
