@@ -48,7 +48,8 @@ public class AlumnoInternacional extends Alumno {// hereda de alumno
     // sobre escritura del metodo del padre (alumno)
     @Override
     public double calcularPromedio() {
-        System.out.println("Calcular Promedio: " + AlumnoInternacional.class.getCanonicalName());
+        // System.out.println("Calcular Promedio: " +
+        // AlumnoInternacional.class.getCanonicalName());
         return ((super.calcularPromedio() * 3) + notaIdiamas) / 4;
     }
 
@@ -56,7 +57,7 @@ public class AlumnoInternacional extends Alumno {// hereda de alumno
     @Override
     public String toString() {
         return super.toString() + "\nPais:" + pais +
-                "Nota Idiomas: " + notaIdiamas;
+                "\nNota Idiomas: " + notaIdiamas;
     }
 
 }

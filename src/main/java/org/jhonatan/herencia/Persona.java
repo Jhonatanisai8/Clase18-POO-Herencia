@@ -65,10 +65,10 @@ public class Persona {
     @Override
     public String toString() {
         return "Nombre: " + nombre +
-                ", Apellido: " + apellido
-                + ", Edad: " + edad
-                + ", Email: " + email +
-                ", Saludo: " + this.saludar();
+                "\nApellido: " + apellido
+                + "\nEdad: " + edad
+                + "\nEmail: " + email +
+                "\nSaludo: " + this.saludar();
     }
 
 }
