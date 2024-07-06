@@ -25,7 +25,6 @@ public class MainConConstructores {
         alumnoFrank.setNotaMatematicas(16.7);
         alumnoFrank.setEmail("frankarmando@gmail.com");
 
-
         Alumno alumnoArmando = new Alumno("Armando Walter", "Ojeda Juarez", 24);
         alumnoArmando.setNotaCastellano(11.6);
         alumnoArmando.setNotaHistoria(17.4);
@@ -76,5 +75,10 @@ public class MainConConstructores {
             System.out.println("=IMPRIMIENDO DATOS DE PROFESOR=");
             System.out.println(" Asiganatura: " + ((Profesor) persona).getAsignatura());
         }
+        System.out.println("============Sobreescritura saludar===========================");
+        System.out.println(persona.saludar());
+
+        System.out.println("=======================================");
+
     }
 }

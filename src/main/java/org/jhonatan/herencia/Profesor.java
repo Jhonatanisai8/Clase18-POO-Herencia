@@ -29,6 +29,7 @@ public class Profesor extends Persona {// clase hija de persona
         this.asignatura = asignatura;
     }
 
+    // sobreescritura del metodo del padre(persona)
     @Override
     public String saludar() {
         return "Buenos dias soy el profesor de " + getAsignatura() +

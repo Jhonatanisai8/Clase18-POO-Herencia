@@ -4,22 +4,22 @@ package org.jhonatan.herencia;
  *
  * @author Jhonatan
  */
-public class AlumnoInternacional extends Alumno {//hereda de alumno
+public class AlumnoInternacional extends Alumno {// hereda de alumno
 
     private String pais;
     private double notaIdiamas;
 
-    //constructor
+    // constructor
     public AlumnoInternacional() {
 
     }
 
     public AlumnoInternacional(String nombre, String apellido) {
-        super(nombre, apellido);//constrcutor del padre en este caso alumno
+        super(nombre, apellido);// constrcutor del padre en este caso alumno
     }
 
     public AlumnoInternacional(String nombre, String apellido, String pais) {
-        super(nombre, apellido);//constrcutor del padre en este caso alumno
+        super(nombre, apellido);// constrcutor del padre en este caso alumno
         this.pais = pais;
     }
 
@@ -39,4 +39,9 @@ public class AlumnoInternacional extends Alumno {//hereda de alumno
         this.notaIdiamas = notaIdiamas;
     }
 
+    // sobrescritura del metodo
+    @Override
+    public String saludar(){
+        return "Hola soy un alumno extranjero del pais "+getPais()+", mi nombre es "+getNombre();
+    }
 }
