@@ -41,7 +41,7 @@ public class AlumnoInternacional extends Alumno {// hereda de alumno
 
     // sobrescritura del metodo
     @Override
-    public String saludar(){
-        return "Hola soy un alumno extranjero del pais "+getPais()+", mi nombre es "+getNombre();
+    public String saludar() {
+        return super.saludar() + " soy extranjero del pais " + getPais();
     }
 }

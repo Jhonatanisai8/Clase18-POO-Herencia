@@ -73,7 +73,9 @@ public class Alumno extends Persona {// clase hija de la clase persona
     // sobreescritura del metodo
     @Override
     public String saludar() {
-        return "hola que tal, soy un alumno y mi nombre es: " + getNombre();
+        //reutilizamos parte del metodo del padre
+        String saludar = super.saludar();
+        return saludar + ", soy un alumno y mi nombre es: " + getNombre();
     }
 
 }
