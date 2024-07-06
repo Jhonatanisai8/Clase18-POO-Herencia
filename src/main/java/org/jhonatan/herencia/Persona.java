@@ -4,6 +4,9 @@ package org.jhonatan.herencia;
  *
  * @author Jhonatan
  */
+/*
+ * El modificador de acceso final es para evitar que una clase tenga hijos
+ */
 public class Persona {
 
     private String nombre;

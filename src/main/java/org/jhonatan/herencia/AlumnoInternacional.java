@@ -4,7 +4,7 @@ package org.jhonatan.herencia;
  *
  * @author Jhonatan
  */
-public class AlumnoInternacional extends Alumno {// hereda de alumno
+public final class AlumnoInternacional extends Alumno {// hereda de alumno
 
     private String pais;
     private double notaIdiamas;
