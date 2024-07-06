@@ -80,7 +80,7 @@ public class Alumno extends Persona {// clase hija de la clase persona
 
     // método para calcular el promedio
     public double calcularPromedio() {
-        System.out.println("Calcular Promedio: " + this.getClass().getCanonicalName());
+        System.out.println("Calcular Promedio: " + Alumno.class.getCanonicalName());
         return (notaHistoria + notaCastellano + notaMatematicas) / 3;
     }
 }
