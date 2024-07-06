@@ -36,4 +36,10 @@ public class Profesor extends Persona {// clase hija de persona
                 " y mi nombre es " + getNombre();
     }
 
+    // sobre escritura del método toString de la clase padre
+    @Override
+    public String toString() {
+        return super.toString() + "\nAsignatura: " + asignatura;
+    }
+
 }

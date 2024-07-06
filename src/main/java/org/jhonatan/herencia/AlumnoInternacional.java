@@ -51,4 +51,12 @@ public class AlumnoInternacional extends Alumno {// hereda de alumno
         System.out.println("Calcular Promedio: " + AlumnoInternacional.class.getCanonicalName());
         return ((super.calcularPromedio() * 3) + notaIdiamas) / 4;
     }
+
+    // sobre escritura del método toString de la clase padre
+    @Override
+    public String toString() {
+        return super.toString() + "\nPais:" + pais +
+                "Nota Idiomas: " + notaIdiamas;
+    }
+
 }

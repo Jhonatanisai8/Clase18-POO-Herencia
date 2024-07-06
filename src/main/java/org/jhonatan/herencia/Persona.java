@@ -62,4 +62,13 @@ public class Persona {
         return "Hola que tal !";
     }
 
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre +
+                ", Apellido: " + apellido
+                + ", Edad: " + edad
+                + ", Email: " + email +
+                ", Saludo: " + this.saludar();
+    }
+
 }

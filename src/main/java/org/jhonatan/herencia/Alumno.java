@@ -83,4 +83,15 @@ public class Alumno extends Persona {// clase hija de la clase persona
         System.out.println("Calcular Promedio: " + Alumno.class.getCanonicalName());
         return (notaHistoria + notaCastellano + notaMatematicas) / 3;
     }
+
+    // sobre escritura del método toString de la clase padre
+    @Override
+    public String toString() {
+        return super.toString() + "\nInstitucion: " + institucion +
+                ", Nota Matematicas: " + notaMatematicas +
+                ", Nota Castellano: " + notaCastellano +
+                ", Nota Historia: " + notaHistoria +
+                ", Promedio: " + this.calcularPromedio();
+    }
+
 }
