@@ -4,24 +4,24 @@ package org.jhonatan.herencia;
  *
  * @author Jhonatan
  */
-public class Alumno extends Persona {//clase hija de la clase persona
+public class Alumno extends Persona {// clase hija de la clase persona
 
     private String institucion;
     private double notaMatematicas;
     private double notaCastellano;
     private double notaHistoria;
 
-    //constructor
+    // constructor
     public Alumno() {
 
     }
 
     public Alumno(String nombre, String apellido) {
-        super(nombre, apellido);//constructor del padre
+        super(nombre, apellido);// constructor del padre
     }
 
     public Alumno(String nombre, String apellido, int edad) {
-        super(nombre, apellido, edad);//constructor del padre
+        super(nombre, apellido, edad);// constructor del padre
     }
 
     public Alumno(String nombre, String apellido, int edad, String institucion) {
@@ -68,6 +68,12 @@ public class Alumno extends Persona {//clase hija de la clase persona
 
     public void setNotaHistoria(double notaHistoria) {
         this.notaHistoria = notaHistoria;
+    }
+
+    // sobreescritura del metodo
+    @Override
+    public String saludar() {
+        return "hola que tal, soy un alumno y mi nombre es: " + getNombre();
     }
 
 }

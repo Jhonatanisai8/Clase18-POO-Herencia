@@ -29,4 +29,10 @@ public class Profesor extends Persona {// clase hija de persona
         this.asignatura = asignatura;
     }
 
+    @Override
+    public String saludar() {
+        return "Buenos dias soy el profesor de " + getAsignatura() +
+                " y mi nombre es " + getNombre();
+    }
+
 }

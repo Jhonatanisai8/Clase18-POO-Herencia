@@ -11,7 +11,7 @@ public class Persona {
     private int edad;
     private String email;
 
-    //constructor
+    // constructor
     public Persona() {
 
     }
@@ -56,6 +56,10 @@ public class Persona {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String saludar() {
+        return "Hola que tal !";
     }
 
 }
