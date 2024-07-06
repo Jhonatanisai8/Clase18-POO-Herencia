@@ -46,6 +46,7 @@ public class MainConConstructores {
         imprimir(alumnoFrank);
         imprimir(pedro);
         imprimir(profesorSamir);
+        imprimir(alumnoFlorentino);
     }
 
     public static void imprimir(Persona persona) {
@@ -67,8 +68,11 @@ public class MainConConstructores {
                 // lo casteamos a tipo AlumnoInternacional
                 System.out.println("Nota idiomas: " + ((AlumnoInternacional) persona).getNotaIdiamas());
                 System.out.println("Pais: " + ((AlumnoInternacional) persona).getPais());
-
             }
+            System.out.println("============Sobreescritura Calcular Promedio===========================");
+            System.out.println("Promedio: " + ((Alumno) persona).calcularPromedio());
+            System.out.println("============Sobreescritura Calcular Promedio===========================");
+
         }
 
         if (persona instanceof Profesor) {

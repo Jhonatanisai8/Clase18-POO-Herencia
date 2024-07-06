@@ -73,9 +73,14 @@ public class Alumno extends Persona {// clase hija de la clase persona
     // sobreescritura del metodo
     @Override
     public String saludar() {
-        //reutilizamos parte del metodo del padre
+        // reutilizamos parte del metodo del padre
         String saludar = super.saludar();
         return saludar + ", soy un alumno y mi nombre es: " + getNombre();
     }
 
+    // método para calcular el promedio
+    public double calcularPromedio() {
+        System.out.println("Calcular Promedio: " + this.getClass().getCanonicalName());
+        return (notaHistoria + notaCastellano + notaMatematicas) / 3;
+    }
 }
